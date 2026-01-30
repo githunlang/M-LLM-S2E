@@ -36,9 +36,6 @@ if __name__ == "__main__":
     # 选择使用哪一个大模型 openai:调用gpt大模型 oneapi:调用非gpt大模型(国产大模型等) ollama:调用本地大模型
     LLM_TYPE = "ollama"
 
-    # 测试数据
-    input_text = "有没有土豪套餐"
-    # input_text = "200元以下，流量大的套餐有啥"
 
     # 运行chain
     result = test(my_llm(LLM_TYPE), input_text)
